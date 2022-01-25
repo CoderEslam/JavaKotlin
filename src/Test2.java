@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Test2 {
 
@@ -21,6 +23,24 @@ public class Test2 {
         }
 
         System.out.println(x.get(0).getName());
+
+
+        Map<Integer ,test> map = new HashMap<>();
+        map.put(1,new test("Eslam",25));
+        map.put(2,new test("Eslam",25));
+        map.put(3,new test("Eslam",25));
+        map.put(4,new test("Eslam",25));
+        map.put(5,new test("Eslam",25));
+        map.put(6,new test("Eslam",25));
+        map.put(7,new test("Eslam",25));
+
+        for (test t:map.values()){
+            System.out.println(t);
+        }
+
+        for (int t:map.keySet()){
+            System.out.println(t);
+        }
 
     }
 
