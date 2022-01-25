@@ -37,7 +37,7 @@ fun main(args: Array<String>) {
 //    print(c)
 
     for (i in c){
-        println("${i}")
+        println("${i.name}")
     }
 
 
