@@ -18,6 +18,14 @@ fun main() {
         println(Oumina)
     }
 
+    for (i in 124652..124780){
+        println("$i")
+    }
+
+    for (i in 124652..124780){
+        println("$i")
+    }
+
 
 }
 

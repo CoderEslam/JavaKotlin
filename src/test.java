@@ -36,4 +36,23 @@ public class test {
         this.name = name;
         this.age = age;
     }
+
+    public static void main(String[] args) {
+
+
+        for (int i = 124652 ; i <= 124906 ;i++ ){
+
+            System.out.println(i + "        " +Integer.valueOf(++i));
+
+
+        }
+
+        for (int i = 124995 ; i <= 125004 ;i++ ){
+
+            System.out.println(i + "        " +Integer.valueOf(++i));
+
+
+        }
+
+    }
 }
