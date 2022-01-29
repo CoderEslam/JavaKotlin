@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Test2 {
+public class Test2  implements AbsJ{
 
     public static void main(String[] args) {
 
@@ -42,6 +42,18 @@ public class Test2 {
             System.out.println(t);
         }
 
+        Test2 t = new Test2();
+        System.out.println(t.Sum(5,10));
+        System.out.println(t.Sub(5,10));
     }
 
+    @Override
+    public int Sum(int n1, int n2) {
+        return n1+n2+10;
+    }
+
+    @Override
+    public int Sub(int n1, int n2) {
+        return n1-n2-5;
+    }
 }

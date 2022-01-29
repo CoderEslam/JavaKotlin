@@ -1,6 +1,6 @@
 import com.sun.istack.internal.NotNull;
 
-public class test {
+public class test implements AbsJ {
 
     public test() {
     }
@@ -54,5 +54,21 @@ public class test {
 
         }
 
+
+        test t = new test();
+        System.out.println(t.Sum(5,10));
+        System.out.println(t.Sub(5,10));
+
+
+    }
+
+    @Override
+    public int Sum(int n1, int n2) {
+        return n1+n2;
+    }
+
+    @Override
+    public int Sub(int n1, int n2) {
+        return n1-n2;
     }
 }
