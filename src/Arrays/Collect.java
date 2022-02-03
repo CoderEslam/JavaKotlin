@@ -65,24 +65,24 @@ public class Collect {
 //        }
         System.out.println("//////////////////////////////////////////////////////////////////////////////////");
 
-        for (int j = 0; j < arrayListArrayList.size(); j++) {
-            for (int i = 0; i < arrayListArrayList.get(j).size(); i++) {
-                ArrayList<Item> Col = new ArrayList<>();
-                for (String item : c) {
-                    if (arrayListArrayList.get(j).get(i).getType().equals(item)) {
-                        Col.add(arrayListArrayList.get(j).get(i));
-                        arrayListArrayListclasification.add(Col);
-//                        System.out.println(" Item = " + item);
-                    }
-                }
-            }
-        }
+//        for (int j = 0; j < arrayListArrayList.size(); j++) {
+//            for (int i = 0; i < arrayListArrayList.get(j).size(); i++) {
+//                ArrayList<Item> Col = new ArrayList<>();
+//                for (String item : c) {
+//                    if (arrayListArrayList.get(j).get(i).getType().equals(item)) {
+//                        Col.add(arrayListArrayList.get(j).get(i));
+//                        arrayListArrayListclasification.add(Col);
+////                        System.out.println(" Item = " + item);
+//                    }
+//                }
+//            }
+//        }
 
         System.out.println("//////////////////////////////////////////////////////////////////////////////////");
 
-//        for (ArrayList<Item> list : arrayListArrayList) {
-//            System.out.println(list);
-//        }
+        for (ArrayList<Item> list : arrayListArrayList) {
+            System.out.println(list);
+        }
 
         System.out.println("//////////////////////////////////////////////////////////////////////////////////");
 //        for (ArrayList<Item> list : arrayListArrayListclasification) {
