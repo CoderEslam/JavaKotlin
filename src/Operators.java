@@ -21,6 +21,12 @@ public class Operators {
         x |= 15;
         System.out.println(x);
 
+        int i = 0x0000100;
+        int ii = 0x0000000;
+        System.out.println(0x0000000|0x00000FF);
+        System.out.println(4|0x0000000);
+        System.out.println(4|0x0000100);
+
     }
 
 }

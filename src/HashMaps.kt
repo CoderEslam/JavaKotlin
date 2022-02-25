@@ -1,4 +1,4 @@
-import org.omg.CORBA.Object
+/*
 import kotlin.collections.HashMap
 
 class HashMaps {
@@ -18,21 +18,23 @@ fun main() {
     }
 
 
-    var  map1 = HashMap<Int, test>()
-    map1.put(1,test("",55));
-    map1.put(2,test("",55));
-    map1.put(3,test("",55));
-    map1.put(4,test("",55));
-    map1.put(5,test("",55));
-    map1.put(6,test("",55));
-    map1.put(7,test("",55));
+    var  map1 = HashMap<Int, TTest>()
+    map1.put(1,TTest("",55));
+    map1.put(2,TTest("",55));
+    map1.put(3,TTest("",55));
+    map1.put(4,TTest("",55));
+    map1.put(5,TTest("",55));
+    map1.put(6,TTest("",55));
+    map1.put(7,TTest("",55));
 
+*/
 /*    map1.put(2,"dvfbb");
     map1.put(3,"dvvvf");
     map1.put(4,"dvvfrdgb");
     map1.put(5,"dvfvfv");
-    map1.put(6,"ddvv");*/
+    map1.put(6,"ddvv");*//*
+
     println(map1.values);
 
 
-}
+}*/

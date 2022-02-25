@@ -1,3 +1,4 @@
+/*
 class Arrays {
 }
 
@@ -7,17 +8,19 @@ fun main() {
     array[1] = 500
     array[3] = 300
 
-    var JA:ArrayList<test> = ArrayList<test>();
-    JA.add(test("Eslam",23))
-    JA.add(test("Eslam",23))
-    JA.add(test("Eslam",23))
-    JA.add(test("Eslam",23))
-    JA.add(test("Eslam",23))
-    JA.add(test("Eslam",23))
-    JA.add(test("Eslam",23))
-    JA.add(test("Eslam",23))
-    JA.add(test("lknc",66));
-    JA.set(1,test("Ghazy",23));   /*  ==  */  JA[1] = test("Alaa",23)
+    var JA:ArrayList<TTest> = ArrayList<TTest>();
+    JA.add(TTest("Eslam",23))
+    JA.add(TTest("Eslam",23))
+    JA.add(TTest("Eslam",23))
+    JA.add(TTest("Eslam",23))
+    JA.add(TTest("Eslam",23))
+    JA.add(TTest("Eslam",23))
+    JA.add(TTest("Eslam",23))
+    JA.add(TTest("Eslam",23))
+    JA.add(TTest("lknc",66));
+    JA.set(1,TTest("Ghazy",23));   */
+/*  ==  *//*
+  JA[1] = TTest("Alaa",23)
 
 
 
@@ -28,7 +31,7 @@ fun main() {
     for (i in 0..JA.size-1){
         println(JA[i])
     }
-    if (JA.contains(test(readLine()!!.toString(), readLine()!!.toInt()))){
+    if (JA.contains(TTest(readLine()!!.toString(), readLine()!!.toInt()))){
         println("yes")
     }else{
         println("no")
@@ -40,4 +43,4 @@ fun main() {
 //    for (i in array){
 //        println(i)
 //    }
-}
+}*/

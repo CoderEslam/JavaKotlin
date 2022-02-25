@@ -37,5 +37,7 @@ fun main() {
 
 //    println(car.name)
 
+    var a = m();
+
 
 }

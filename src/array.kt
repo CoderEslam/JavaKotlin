@@ -1,4 +1,7 @@
 class array {
+
+
+
 }
 
 fun main(args: Array<String>) {
@@ -45,5 +48,10 @@ fun main(args: Array<String>) {
         println("${i}")
     }
 
+}
+
+fun m(){
+
+    println("dvklsdNSVjsk")
 
 }

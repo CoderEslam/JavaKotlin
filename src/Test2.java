@@ -1,3 +1,4 @@
+/*
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -25,16 +26,16 @@ public class Test2  implements AbsJ{
         System.out.println(x.get(0).getName());
 
 
-        Map<Integer ,test> map = new HashMap<>();
-        map.put(1,new test("Eslam",25));
-        map.put(2,new test("Eslam",25));
-        map.put(3,new test("Eslam",25));
-        map.put(4,new test("Eslam",25));
-        map.put(5,new test("Eslam",25));
-        map.put(6,new test("Eslam",25));
-        map.put(7,new test("Eslam",25));
+        Map<Integer , TTest> map = new HashMap<>();
+        map.put(1,new TTest("Eslam",25));
+        map.put(2,new TTest("Eslam",25));
+        map.put(3,new TTest("Eslam",25));
+        map.put(4,new TTest("Eslam",25));
+        map.put(5,new TTest("Eslam",25));
+        map.put(6,new TTest("Eslam",25));
+        map.put(7,new TTest("Eslam",25));
 
-        for (test t:map.values()){
+        for (TTest t:map.values()){
             System.out.println(t);
         }
 
@@ -57,3 +58,4 @@ public class Test2  implements AbsJ{
         return n1-n2-5;
     }
 }
+*/

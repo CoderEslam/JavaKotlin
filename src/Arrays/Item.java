@@ -2,9 +2,37 @@ package Arrays;
 
 public class Item {
 
-    public Item(String name, String type) {
+
+    private String chiledCategory;
+    private String heatCategory;
+    private String name;
+
+    public Item(String chiledCategory, String heatCategory, String name) {
+        this.chiledCategory = chiledCategory;
+        this.heatCategory = heatCategory;
         this.name = name;
-        this.type = type;
+    }
+
+    public Item(String heatCategory, String name) {
+        this.heatCategory = heatCategory;
+        this.name = name;
+    }
+
+
+    public String getChiledCategory() {
+        return chiledCategory;
+    }
+
+    public void setChiledCategory(String chiledCategory) {
+        this.chiledCategory = chiledCategory;
+    }
+
+    public String getHeatCategory() {
+        return heatCategory;
+    }
+
+    public void setHeatCategory(String heatCategory) {
+        this.heatCategory = heatCategory;
     }
 
     public String getName() {
@@ -15,23 +43,12 @@ public class Item {
         this.name = name;
     }
 
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    private String name ;
-    private String type;
-
-
     @Override
     public String toString() {
         return "Item{" +
-                "name='" + name + '\'' +
-                ", type='" + type + '\'' +
+                "chiledCategory='" + chiledCategory + '\'' +
+                ", heatCategory='" + heatCategory + '\'' +
+                ", name='" + name + '\'' +
                 '}';
     }
 }
