@@ -1,7 +1,6 @@
 class array {
 
 
-
 }
 
 fun main(args: Array<String>) {
@@ -13,44 +12,56 @@ fun main(args: Array<String>) {
     a.add("mona");
     a.add("oumnia");
 
-    for (x in a) {
-        for (i in x) {
-            println("$i = ${i.toInt()}");
-        }
-    }
+//    for (x in a) {
+//        for (i in x) {
+//            println("$i = ${i.toInt()}");
+//        }
+//    }
 
     var c: ArrayList<CData> = ArrayList<CData>()
 
-    c.add(CData(5,"Eslam"))
-    c.add(CData(10,"Ghazy"))
-    c.add(CData(25,"ALi"))
-    c.add(CData(33,"Ahmed"))
-    c.add(CData(55,"Osama"))
-    c.add(CData(362,"mohammed"))
-    c.add(CData(255,"mona"))
-    c.add(CData(2556,"Alaa"))
+    c.add(CData(5, "Eslam"))
+    c.add(CData(10, "Ghazy"))
+    c.add(CData(25, "ALi"))
+    c.add(CData(33, "Ahmed"))
+    c.add(CData(55, "Osama"))
+    c.add(CData(362, "mohammed"))
+    c.add(CData(255, "mona"))
+    c.add(CData(2556, "Alaa"))
 
-    var cData:ArrayList<CData> = ArrayList();
-    cData.add(CData(23,"Islam","Alex"))
-    cData.add(CData(23,"Aslam","Alex"))
-    cData.add(CData(23,"Eslam","Alex"))
-    cData.add(CData(23,"Eslam","Alex"))
-    cData.add(CData(23,"Eslam","Alex"))
-    cData.add(CData(23,"Eslam","Alex"))
+    var cData: ArrayList<CData> = ArrayList();
+    cData.add(CData(23, "Islam", "Alex"))
+    cData.add(CData(23, "Aslam", "Alex"))
+    cData.add(CData(23, "Eslam", "Alex"))
+    cData.add(CData(23, "Eslam", "Alex"))
+    cData.add(CData(23, "Eslam", "Alex"))
+    cData.add(CData(23, "Eslam", "Alex"))
 //    print(c)
 
-    for (i in c){
-        println("${i.name}")
+//    for (i in c){
+//        println("${i.name}")
+//    }
+//
+//
+//    for (i in cData){
+//        println("${i}")
+//    }
+
+    var ToggleItem = "[اخضر, احمر, برتقالي, نبيتي ,ازرق ,اصفر]"
+    var spliter = ToggleItem.toString().replace("[", "").replace("]", "").replace(" ", "").split(",")
+    ToggleItem = ToggleItem.replace("Red", "")
+
+    if (ToggleItem.contains("اصفر")){
+        ToggleItem.replace("اصفر","")
     }
+    println(ToggleItem)
+    for (i in 0 until spliter.size){
 
-
-    for (i in cData){
-        println("${i}")
     }
 
 }
 
-fun m(){
+fun m() {
 
     println("dvklsdNSVjsk")
 

@@ -1,11 +1,27 @@
 package Arrays;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
 
-public class Collect {
+public class Collect extends Thread {
 
     private static ArrayList<ArrayList<ArrayList<Item>>> arrayListOfArrayLists = new ArrayList<>();
 
+
+    @Override
+    public void run() {
+        super.run();
+        for (int i = 0; i < 20; i++) {
+            System.out.println("Threads  =" + i);
+            try {
+                sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+        }
+    }
 
     public static void main(String[] args) {
 
@@ -113,7 +129,6 @@ public class Collect {
 
         System.out.println("//////////////////////////////////////////////////////////////////////////////////");
 
-
         for (ArrayList<ArrayList<Item>> list : arrayListOfArrayLists) {
             for (ArrayList<Item> i : list) {
                 if (!i.isEmpty()) {
@@ -125,6 +140,16 @@ public class Collect {
             }
         }
 
+
+        HashMap<String, Object> map = new HashMap<>();
+        map.put("name", "ljsnclfad");
+        map.put("name2", "ljsndygmkyhclfad");
+        map.put("name3", "ljsnclfznfgsnfad");
+        map.put("name4", "ljsncldndztsbnfad");
+
+        ArrayList<String> list = new ArrayList(map.values());
+        Collection<Object> arrayList = map.values();
+        System.out.println(list);
 
 //        String anem = "Abd Elrhman Zokla\n+201210717452";
 //        String [] n =anem.split("\n");
@@ -150,5 +175,19 @@ public class Collect {
 //                System.out.println("nkhbhb,hjbjn");
 //        }
 
+        Collect collect = new Collect();
+        collect.start();
+        Collect collect1 = new Collect();
+        try {
+            collect1.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        collect1.start();
+
+
+
     }
+
+
 }
