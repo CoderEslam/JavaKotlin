@@ -43,19 +43,19 @@ public class Sorting {
 //
 //        System.out.println(items);
 
-        long d = 1647385037050L;
+        long d = 1648813199907L;
         int year = Calendar.getInstance().get(Calendar.YEAR);
         int m = Calendar.getInstance().get(Calendar.MONTH);
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEE, d MM yyyy HH:mm:ss aaa");
         String s = simpleDateFormat.format(d);
-        System.out.println("simpleDateFormat = " + s);
-        System.out.println("===" + s.substring(5,7));
+//        System.out.println("simpleDateFormat = " + s);
+//        System.out.println("===" + s.substring(5,7));
 //        System.out.println(s.substring(8, 10));
 //        System.out.println("Current month = " + String.valueOf(m + 1));
 //        int f = Integer.parseInt("01");
 //        String ff = String.valueOf(f);
-        int sub = Integer.parseInt(s.substring(8, 10));
-        System.out.println("Sub = " + sub);
+//        int sub = Integer.parseInt(s.replace(" ","").substring(8, 10));
+//        System.out.println("Sub = " + sub);
 //        System.out.println(ff.equals(String.valueOf(sub)));
 //        System.out.println(s.contains(String.valueOf(year)));
         getDate(d);
@@ -66,7 +66,8 @@ public class Sorting {
         String d = simpleDateFormat.format(date);
         int currentYear = Calendar.getInstance().get(Calendar.YEAR);
         int currentMonth = Calendar.getInstance().get(Calendar.MONTH) + 1;
-        String month = String.valueOf(Integer.parseInt(d.substring(8, 10)));
+        String month = String.valueOf(Integer.parseInt(d.replace(" ","").substring(8, 10)));
+        System.out.println(d.substring(8,10));
         System.out.println(d.contains(String.valueOf(currentYear)));
         System.out.println(month.equals(String.valueOf(currentMonth)));
     }
