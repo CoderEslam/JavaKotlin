@@ -6,7 +6,7 @@ import java.util.*;
 import static Arrays.Item.itemComparator;
 import static Arrays.Item.itemComparatorCh;
 
-public class Sorting {
+public class Sorting  {
 
     public static void main(String[] args) {
 
@@ -43,10 +43,13 @@ public class Sorting {
 //
 //        System.out.println(items);
 
-        long d = 1648813199907L;
+        long d = 1650145301855L;
+//        long ff = 1648984616191L - 1648984614289L;
+//        long g = 1648984616191L + 86400000L;
+//        System.out.println(ff);
         int year = Calendar.getInstance().get(Calendar.YEAR);
         int m = Calendar.getInstance().get(Calendar.MONTH);
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEE, d MM yyyy HH:mm:ss aaa");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEE, dd MM yyyy HH:mm:ss aaa");
         String s = simpleDateFormat.format(d);
 //        System.out.println("simpleDateFormat = " + s);
 //        System.out.println("===" + s.substring(5,7));
@@ -63,14 +66,27 @@ public class Sorting {
 
 
     public static void getDate(long date) {
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEE, d MM yyyy HH:mm:ss aaa");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEE, dd MM yyyy HH:mm:ss aaa");
         String d = simpleDateFormat.format(date);
+        System.out.println(d);
         int currentYear = Calendar.getInstance().get(Calendar.YEAR);
         int currentMonth = Calendar.getInstance().get(Calendar.MONTH) + 1;
-        String month = String.valueOf(Integer.parseInt(d.replace(" ","").substring(8, 10)));
-        System.out.println(d.substring(8,10));
+        int currentDay = Calendar.getInstance().get(Calendar.DATE);
+        String month = String.valueOf(Integer.parseInt(d.substring(8, 10)));
+        String day = String.valueOf(Integer.parseInt(d.substring(5, 7)));
+        System.out.println(month);
+        System.out.println(day);
         System.out.println(d.contains(String.valueOf(currentYear)));
         System.out.println(month.equals(String.valueOf(currentMonth)));
+        System.out.println(day.equals(String.valueOf(currentDay)));
+    }
+
+    public void SSSS() {
+
+    }
+
+    public void DDDDD() {
+
     }
 
 }
